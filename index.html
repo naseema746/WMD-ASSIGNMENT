@@ -6,48 +6,166 @@
         <title>Soleful Steps</title>
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-     </head>
+     <style>
+        body {
+            font-family: arial, sans-serif; padding: 20px
+        }
+        .shoe-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: left;
+        }
+        .card {
+            width: 450px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+     </style>
+    <style>
+                                    table {
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                        color: black;
+                                        font-family: sans-serif;
+                                    }
+                                    tr, td {
+                                        border: 1px solid black;
+                                        padding: 8px;
+                                        text-align: left;
+                                    }
+                                    </style> 
+                                    <style>
+                                        html{
+                                            scroll-behavior: smooth;
+                                        }
+                                        section {
+                                            padding-top: 80px;
+                                        }
+                                    </style>
+    </head>
 
     <body>
-       
-    </body>
-    </html>
+   
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <nav class="container">
-    <img src="shoe/logo.png"
-    style="width: 100px; height: 100px;">
-    <a class="navbar-brand">Soleful Steps</a>
-    <ul class="navbar-nav">
+    
+        <div class="container">
+       <img src="shoe/logo.png"
+     style="width: 100px; height: 100px;">
+    <a class="navbar-brand ms-2" href="#home">Soleful Steps</a>
+    <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-            <a class="nav-link">Home</a>
+            <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">Shoes</a>
+                <a class="nav-link" href="#shoes">Shoes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Pricing</a>
+                    <a class="nav-link" href="#pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
+                    </div>
+                    </div>
                     </nav>
-                    </nav>
-                    <p style="margin: 100px; float: left; width: 200px; border: 2px solid red; background-color: lightblue;">Soleful Steps is your one-stop shop to good quality, affordable shoes of variuos sizes. Open all week, you can find various types of shoes for both male and female. We deliver, we offer discounts for shoes sold while damaged or damaged during shipping.</p>
+                    <section id="home"><h1>Home Section</h1></section>
+                    
+                    <p style="margin: 100px; float: left; width: 200px;">Soleful Steps is your one-stop shop to good quality, affordable shoes of variuos sizes. Open all week, you can find various types of shoes for both male and female. We deliver, we offer discounts for shoes sold while damaged or damaged during shipping.</p>
                     <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-md-4">
+                    <div class="card-image">
+                        <img src="shoe/shop1.webp" style="width: 800px; height: 500px; justify-content: center;"
+                        id="shop-image"
+                        class="card-img">
+                        </div>
+                        </div>
+                    <section id="shoes"></section>
+                    <h2>Shoes</h2>
+                        <div class="shoe-gallery">
                             <div class="card">
-                        <img src="shoe/shop1.webp"
-                        style="width: 700px; height: 500px;">
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="container mt-5">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img src="shoe/shoe_1.jfif"
-                                    style="width: 200px; height: 200px;">                    
+                                    <img src="shoe/shoe_1.jfif" style="width: 200px; height: 200px;"> <p>Quality Boot</p>
+                                    </div>
+                        <div class="card">
+                                    <img src="shoe/formal_shoe.jfif" style="width: 200px; height: 200px;"> <p>Formal Shoe</p>
+                                    </div>
+                                    <div class="card">
+                                    <img src="shoe/casual_shoe.jfif" style="width: 200px; height: 200px;"> <p>Casual Shoe</p>
+                                    </div>
+                                        </div>
+                                        <section id="pricing" class="container">
+                                            <h2>Pricing Table</h2>
+                                            <table class="table table-borderd table-striped">
+                                    <thead>
+                                        <tr>
+                                        <th>Shoe</th>
+                                        <th>Pricing</th>
+                                        <th>Availabilty</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Quality Boot</td>
+                                        <td>$750</td>
+                                        <td>Available</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Formal Shoe</td>
+                                        <td>$600</td>
+                                        <td>Available</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Casual Shoe</td>
+                                            <td>$350</td>
+                                            <td>Available</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    </section>
+
+                                    <section id="contact"
+                                    class="container mt-5">
+                                    <h2>Contact Us</h2>
+                                    <p>Fill out the form below to contact us.</p>
+                                    <form action="#" method="POST">
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Full Name</label>
+                                            <input type="text"
+                                            class="form-control" id="name"
+                                            placeholder="Enter your name" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="email"
+                                                class="form-label">Email Address</label>
+                                                <input type="email"
+                                                class="form-control" id="email"
+                                                placeholder="name@example.com" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message"
+                                                    class="form-label">Message</label>
+                                                    <textarea
+                                                    class="form-control" id="message"
+                                                    rows="3" placeholder="How may we assist you?"></textarea>
+                                                    </div>
+                                                    <button type="submit"
+                                                    class="btn btn-primary">Send Message</button>
+                                                    </form>
+                                                </section>
+                                                <footer class="bg-dark text-white text-center py-4 mt-5">
+                                                    <div class="container">
+                                                        <p>&copy; 2026 Soleful Steps. All rights reserved.</p>
+                                                        </div>
+                                                        <a href="#" class="text-white me-3">Privacy Policy</a>
+                                                        <a href="#"
+                                                        class="text-white">Terms of Service</a>
+                                                        </footer>
+                                            </body>
+                                            </html>
+                                                 
                                                                                                                              
