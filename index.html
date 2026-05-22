@@ -25,6 +25,19 @@
             height: auto;
             display: block;
         }
+        .container {
+            display: block;}
+            @media (min-width: 600px) {
+                .container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            @media (min-width: 1024px) {
+                .container {
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
      </style>
     <style>
                                     table {
@@ -77,7 +90,7 @@
                     </nav>
                     <section id="home"><h1>Home Section</h1></section>
                     
-                    <p style="margin: 100px; float: left; width: 200px;">Soleful Steps is your one-stop shop to good quality, affordable shoes of variuos sizes. Open all week, you can find various types of shoes for both male and female. We deliver, we offer discounts for shoes sold while damaged or damaged during shipping.</p>
+                    <p style="margin: 100px; float: left; width: 200px; border: 2px solid black;">Soleful Steps is your one-stop shop to good quality, affordable shoes of variuos sizes. Open all week, you can find various types of shoes for both male and female. We deliver, we offer discounts for shoes sold while damaged or damaged during shipping.</p>
                     <div class="container mt-5">
                     <div class="card-image">
                         <img src="shoe/shop1.webp" style="width: 800px; height: 500px; justify-content: center;"
@@ -92,7 +105,7 @@
                                     <img src="shoe/shoe_1.jfif" style="width: 200px; height: 200px;"> <p>Quality Boot</p>
                                     </div>
                         <div class="card">
-                                    <img src="shoe/formal_shoe.jfif" style="width: 200px; height: 200px;"> <p>Formal Shoe</p>
+                                    <img src="shoe/casual.webp" style="width: 200px; height: 200px;"> <p>Formal Shoe</p>
                                     </div>
                                     <div class="card">
                                     <img src="shoe/casual_shoe.jfif" style="width: 200px; height: 200px;"> <p>Casual Shoe</p>
